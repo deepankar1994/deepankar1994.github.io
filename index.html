@@ -21,7 +21,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Material Design Lite</title>
+    <title>Deepankar Arya</title>
 
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
@@ -48,6 +48,22 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="material.min.css">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <script type="text/javascript">
+    	$(function() {
+  			// Handler for .ready() called.
+  	var insPop="<div id='onTop'><div id='DAWikiTitle' style='width: 50%; margin: 0 auto;'>Wikipedia Lookup</div><p id='DAWikiText'></p> <button id='DAbttn'>Close</button>  </div>";
+    $("body").append(insPop); 
+    $("#DAWikiText").text("This text should be on a popUp"); 
+
+    $( "#DAbttn" ).click(function() {
+  		$("#onTop").remove();
+		});
+
+
+		});
+    </script>
     <style>
     #view-source {
       position: fixed;
@@ -59,6 +75,23 @@
       z-index: 900;
     }
     </style>
+
+    <style>
+
+    #onTop
+    {
+  	
+ 	position: absolute;
+ 	background-color: white;
+ 	left:40%;
+ 	top:40%;
+ 	z-index:2147483647;
+
+ 
+
+
+	}
+    </style>
   </head>
   <body>
     <div class="demo-blog mdl-layout mdl-js-layout has-drawer is-upgraded">
@@ -66,7 +99,7 @@
         <div class="demo-blog__posts mdl-grid">
           <div class="mdl-card coffee-pic mdl-cell mdl-cell--8-col">
             <div class="mdl-card__media mdl-color-text--grey-50">
-              <h3><a href="entry.html">Coffee Pic</a></h3>
+              <h3><a href="entry.html">About Me</a></h3>
             </div>
             <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
               <div class="minilogo"></div>
@@ -77,10 +110,7 @@
             </div>
           </div>
           <div class="mdl-card something-else mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop">
-            <button class="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--fab mdl-color--accent">
-              <i class="material-icons mdl-color-text--white" role="presentation">add</i>
-              <span class="visuallyhidden">add</span>
-            </button>
+          
             <div class="mdl-card__media mdl-color--white mdl-color-text--grey-600">
               <img src="images/logo.png">
               +1,337
@@ -158,8 +188,7 @@
         </div>
         <footer class="mdl-mini-footer">
           <div class="mdl-mini-footer--left-section">
-            <button class="mdl-mini-footer--social-btn social-btn social-btn__twitter">
-              <span class="visuallyhidden">Twitter</span>
+        
             </button>
             <button class="mdl-mini-footer--social-btn social-btn social-btn__blogger">
               <span class="visuallyhidden">Facebook</span>
@@ -178,7 +207,9 @@
       </main>
       <div class="mdl-layout__obfuscator"></div>
     </div>
-    <a href="https://github.com/google/material-design-lite/blob/master/templates/blog/" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--white">View Source</a>
+
+ 	
+    
     <script src="material.min.js"></script>
   </body>
   <script>
